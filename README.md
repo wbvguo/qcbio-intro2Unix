@@ -1,1 +1,1 @@
-# qcbio-intro2Unix
+This repository is designed for UCLA QCBio Collaboratory workshop: Introduction to Unix command line and shell programming. For registration information, please refer to this [link](https://qcb.ucla.edu/collaboratory/workshops/w1-intro-to-unix-command-line/)
