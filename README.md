@@ -4,6 +4,6 @@ Folder description:
 - slides: slides for the 3-day workshop
 - dayN: test examples/data for each day's slides
 
-$~$
+<br/>
 
 <img src="./slides/qcb-logo.png" width="215" height="100">
