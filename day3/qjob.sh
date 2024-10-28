@@ -1,17 +1,20 @@
 #!/bin/bash
-#$ -S /bin/bash
-#$ -cwd
-#$ -t 1-5   # because we have 5 samples 
-#$ -j y     # Error stream is merged with the standard output
-#$ -l h_data=256M,h_rt=00:10:00
-#$ -r n     # job is NOT rerunable
-#$ -m a     # Email on abort
-#$ -o joblog.$JOB_ID.$TASK_ID
+#$ -S /bin/bash                     # specify the shell
+#$ -cwd                             # execute the job in the current directory
+#$ -j y                             # Error stream is merged with the standard output
+#$ -r n                             # job is NOT rerunable
+#$ -m a                             # Email on abort
+#$ -l h_data=256M,h_rt=00:10:00     # computational resources
+#$ -t 1-5                           # number of tasks
+#$ -o joblog.$JOB_ID.$TASK_ID       # output log file
+
 
 ja=$HOME/qcbio-intro2Unix/day3/jobs
 
+
 PARMS=($(awk "NR==$SGE_TASK_ID" $ja))
 sample_name=${PARMS[0]}
+
 
 echo "$sample_name started!"
 date
