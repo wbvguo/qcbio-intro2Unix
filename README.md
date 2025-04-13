@@ -46,5 +46,5 @@ No prior experience with Unix or programming is required. Participants should ha
 
 <br/>
 
-<img src="./slides/qcb-logo.png" width="215" height="100">
+<img src="./slides/UCLA_QCBio-logo.png" width="215" height="100">
 
